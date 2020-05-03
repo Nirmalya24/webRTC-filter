@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>WebRTC</title>
+</head>
+<body>
+    <div class="m-content">
+        <h1>getUSerMedia + CSS filters demo</h1>
+        <div class="photo-booth">
+            <!-- local video stream gets rendered here -->
+            <video autoplay></video>
+            <!-- copy of the stream will be made and css filters applied -->
+            <canvas></canvas>
+        </div>
+        <div class="buttons">
+            <!-- call getUserMedia() to access webcam and permission -->
+            <button id="start">Access webcam</button>
+            <button id="snapshot">Take a Snapshot</button>
+            <button id="filter">Change filter</button>
+        </div>
+    </div>
+
+    <!-- Le js -->
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
